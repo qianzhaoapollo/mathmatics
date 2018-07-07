@@ -24,7 +24,7 @@ void coin_number(int n){
 
 	for(int i=0; i<SIZE; i++) {
 		for(int j=0; j<COIN; j++) {
-			if(i - coin[j] > -1 && sum[i - coin[j]] + 1 < sum[i]) {
+			if(i - coin[j] > -1 && sum[i - coin[j]] + 1 < sum[i]) {		// 取最小值的小技巧。
 				sum[i] = sum[i - coin[j]] + 1;
 			}
 		}
